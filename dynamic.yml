@@ -1,20 +1,35 @@
 http:
   routers:
+    # Router 1: Protected by Password
     router0:
       entryPoints:
-      - web
-      middlewares:
-      - basic-auth
+        - web
       service: hello-world
       rule: "Path(`/hello-world`)"
+      middlewares:
+        - basic-auth
+
+    # Router 2: Public Guestbook (No Password)
+    guest-router:
+      entryPoints:
+        - web
+      service: guestbook-service
+      rule: "Path(`/guestbook`)"
+
   services:
     hello-world:
       loadBalancer:
         servers:
-        - url: "http://localhost:9080/"
+          - url: "http://localhost:9080/"
+    
+    guestbook-service:
+      loadBalancer:
+        servers:
+          - url: "http://localhost:9081/"
+          - url: "http://localhost:9082/"
+
   middlewares:
     basic-auth:
       basicAuth:
         users:
           - "admin@123:$1$vLxrG/..$C26y51I5rFGYFYUkA3OxQ."
-        
