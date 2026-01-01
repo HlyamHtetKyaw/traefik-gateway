@@ -17,11 +17,13 @@ http:
       rule: "Path(`/guestbook`)"
 
   services:
+    # Service 1
     hello-world:
       loadBalancer:
         servers:
           - url: "http://localhost:9080/"
     
+    # Service 2 (with sticky session)
     guestbook-service:
       loadBalancer:
         sticky:
@@ -29,7 +31,8 @@ http:
         servers:
           - url: "http://localhost:9081/"
           - url: "http://localhost:9082/"
-
+  
+  # Middlewares
   middlewares:
     basic-auth:
       basicAuth:
