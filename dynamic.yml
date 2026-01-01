@@ -24,6 +24,8 @@ http:
     
     guestbook-service:
       loadBalancer:
+        sticky:
+          cookie: {}
         servers:
           - url: "http://localhost:9081/"
           - url: "http://localhost:9082/"
