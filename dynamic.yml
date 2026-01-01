@@ -31,11 +31,19 @@ http:
             weight: 3
           - name: guestv2
             weight: 1
+        sticky:
+          cookie:
+            httpOnly: true
+            
     guestv1:
       loadBalancer:
+        sticky:
+          cookie:
+            httpOnly: true
         servers:
           - url: "http://localhost:9081"
           - url: "http://localhost:9082"
+          
     guestv2:
       loadBalancer:
         servers:
