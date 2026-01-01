@@ -26,11 +26,15 @@ http:
     # Service 2 (with sticky session)
     guestbook-service:
       loadBalancer:
-        sticky:
-          cookie: {}
+        #sticky:
+          #cookie: {}
         servers:
           - url: "http://localhost:9081/"
           - url: "http://localhost:9082/"
+        healthCheck:
+          path: /
+          interval: "10s"
+          timeout: "1s"
   
   # Middlewares
   middlewares:
