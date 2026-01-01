@@ -1,0 +1,41 @@
+********************************************************************************
+product = Open Liberty 25.0.0.12 (wlp-1.0.108.cl251220251117-0302)
+wlp.install.dir = /home/square/Documents/hello-world-jar/target/liberty/wlp/
+java.home = /usr/lib/jvm/java-21-openjdk-amd64
+java.version = 21.0.9
+java.runtime = OpenJDK Runtime Environment (21.0.9+10-Ubuntu-124.04)
+os = Linux (6.14.0-27-generic; amd64) (en_US)
+process = 10918@square-Aspire-V5-471G
+Classpath = /home/square/Documents/hello-world-jar/target/liberty/wlp/bin/tools/ws-server.jar
+Java Library path = /usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+********************************************************************************
+[12/30/25, 18:47:48:277 MMT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[12/30/25, 18:47:50:151 MMT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 2.465 seconds
+[12/30/25, 18:47:50:174 MMT] 00000030 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[12/30/25, 18:47:51:075 MMT] 00000024 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[12/30/25, 18:47:51:678 MMT] 00000035 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ROOT.
+[12/30/25, 18:47:51:681 MMT] 00000035 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The ROOT application is using the loose application definition at the /home/square/Documents/hello-world-jar/target/liberty/wlp/usr/servers/defaultServer/dropins/ROOT.war.xml location.
+[12/30/25, 18:47:52:373 MMT] 00000035 com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[12/30/25, 18:47:52:411 MMT] 00000035 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ROOT.
+[12/30/25, 18:47:52:417 MMT] 00000035 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ROOT has been bound to default_host.
+[12/30/25, 18:47:52:420 MMT] 00000035 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:9080/ROOT/
+[12/30/25, 18:47:52:534 MMT] 00000034 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/square/Documents/hello-world-jar/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[12/30/25, 18:47:52:657 MMT] 00000031 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ROOT
+[12/30/25, 18:47:52:677 MMT] 00000031 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[12/30/25, 18:47:52:828 MMT] 00000031 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application ROOT started in 1.149 seconds.
+[12/30/25, 18:47:52:892 MMT] 00000030 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host localhost  (IPv4: 127.0.0.1) port 9080.
+[12/30/25, 18:47:52:922 MMT] 00000030 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [el-3.0, jsp-2.3, servlet-3.1].
+[12/30/25, 18:47:52:924 MMT] 00000030 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 2.774 seconds.
+[12/30/25, 18:47:52:925 MMT] 00000030 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The defaultServer server is ready to run a smarter planet. The defaultServer server started in 5.242 seconds.
+[12/30/25, 18:47:56:736 MMT] 0000003b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:9080/ROOT/
+[12/30/25, 18:47:56:776 MMT] 0000003b com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ROOT has stopped successfully.
+[12/30/25, 18:47:56:787 MMT] 0000003b com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ROOT.
+[12/30/25, 18:47:56:788 MMT] 0000003b bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The ROOT application is using the loose application definition at the /home/square/Documents/hello-world-jar/target/liberty/wlp/usr/servers/defaultServer/dropins/ROOT.war.xml location.
+[12/30/25, 18:47:56:843 MMT] 0000003b com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ROOT.
+[12/30/25, 18:47:56:844 MMT] 0000003b com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ROOT has been bound to default_host.
+[12/30/25, 18:47:56:845 MMT] 0000003b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:9080/ROOT/
+[12/30/25, 18:47:56:860 MMT] 0000003b com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ROOT
+[12/30/25, 18:47:56:861 MMT] 0000003b com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[12/30/25, 18:47:56:873 MMT] 0000003b com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ROOT updated in 0.085 seconds.
+[12/30/25, 18:47:57:359 MMT] 00000031 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/square/Documents/hello-world-jar/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[12/30/25, 18:47:57:433 MMT] 00000030 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/square/Documents/hello-world-jar/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.

@@ -3,11 +3,18 @@ http:
     router0:
       entryPoints:
       - web
+      middlewares:
+      - basic-auth
       service: hello-world
       rule: "Path(`/hello-world`)"
-
   services:
     hello-world:
       loadBalancer:
         servers:
         - url: "http://localhost:9080/"
+  middlewares:
+    basic-auth:
+      basicAuth:
+        users:
+          - "admin@123:$1$vLxrG/..$C26y51I5rFGYFYUkA3OxQ."
+        

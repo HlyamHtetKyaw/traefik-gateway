@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<liberty-plugin-config>
+    <installDirectory>/home/square/Documents/hello-world-jar/target/liberty/wlp</installDirectory>
+    <assemblyArtifact>
+        <groupId>io.openliberty</groupId>
+        <artifactId>openliberty-kernel</artifactId>
+        <version>25.0.0.12</version>
+        <type>zip</type>
+    </assemblyArtifact>
+    <assemblyArchive>/home/square/.m2/repository/io/openliberty/openliberty-kernel/25.0.0.12/openliberty-kernel-25.0.0.12.zip</assemblyArchive>
+    <assemblyInstallDirectory>/home/square/Documents/hello-world-jar/target/liberty</assemblyInstallDirectory>
+    <refresh>false</refresh>
+    <serverDirectory>/home/square/Documents/hello-world-jar/target/liberty/wlp/usr/servers/defaultServer</serverDirectory>
+    <userDirectory>/home/square/Documents/hello-world-jar/target/liberty/wlp/usr</userDirectory>
+    <serverOutputDirectory>/home/square/Documents/hello-world-jar/target/liberty/wlp/usr/servers/defaultServer</serverOutputDirectory>
+    <serverName>defaultServer</serverName>
+    <projectType>war</projectType>
+    <configDirectory>/home/square/Documents/hello-world-jar/src/main/liberty/config</configDirectory>
+    <appsDirectory>dropins</appsDirectory>
+    <looseApplication>true</looseApplication>
+    <stripVersion>false</stripVersion>
+    <installAppPackages>project</installAppPackages>
+    <applicationFilename>ROOT.war.xml</applicationFilename>
+    <installAppsConfigDropins>/home/square/Documents/hello-world-jar/target/liberty/wlp/usr/servers/defaultServer/configDropins/defaults/install_apps_configuration_1491924271.xml</installAppsConfigDropins>
+</liberty-plugin-config>
